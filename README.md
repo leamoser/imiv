@@ -35,3 +35,7 @@ Hier sind die Snippets zu finden, welche im Unterricht IM4 (Wordpress-Theme-Entw
 
 </html>
 ```
+## S01.02
+```html
+<link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url') ;?>">
+```
