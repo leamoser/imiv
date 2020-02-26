@@ -4,10 +4,11 @@ Hier sind die Snippets zu finden, welche im Unterricht IM4 (Wordpress-Theme-Entw
 ## S01.01
 ```html
 <!doctype html>
-<html>
+<html lang="de-CH">
 
 <head>
     <title>Mein Portfolio</title>
+    <meta charset="UFT-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,user-scalable=yes">
 </head>
 
