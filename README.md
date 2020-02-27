@@ -84,4 +84,51 @@ function theme_prefix_setup() {
     <p>Hier gibt's leider nix zu sehen.</p>
 <?php endif; ?>
 ```
-## S05.01
+## S05.01 - Beitragsbilder registrieren
+```PHP
+add_theme_support( 'post-thumbnails' );
+```
+## S05.02 - Gesamten Autor/innen-Namen ausgeben
+```PHP
+<?php
+
+  $fname = get_the_author_meta('first_name');
+  $lname = get_the_author_meta('last_name');
+  $full_name = '';
+
+  if( empty($fname)){
+      $full_name = $lname;
+  } elseif( empty( $lname )){
+      $full_name = $fname;
+  } else {
+      $full_name = "{$fname} {$lname}";
+  }
+
+	//in der variabel $full_name ist nun der Name abgespeichert, es muss nur noch dieser mit PHP (echo) ausgegeben werden.
+ ?>
+ ```
+ ## S05.03 - Schlagwörter ohne Links ausgeben
+ ```PHP
+   <?php
+  $posttags = get_the_tags();
+  if ($posttags) {
+    echo '<ul>';
+    foreach($posttags as $tag) {
+      echo '<li>' .$tag->name. '</li>';
+    }
+    echo '</ul>';
+  }
+  ?>
+  ```
+  ## S06.01 - Return Self-Closing Shortcode
+  ```PHP
+  return '<div class="sociallink" style="color:' . $atts['color'] . '">
+  <p><a href="#">Folge mir auf Facebook</a></p>
+  <p><a href="#">Folge mir auf Twitter</a></p>
+  </div>';
+  ```
+  ## S06.02 - Return Enclosing Shortcode
+  ```PHP
+  return '<div class="textauszeichnung">' . $content . '</div>';
+  ```
+  
