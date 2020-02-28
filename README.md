@@ -131,4 +131,19 @@ add_theme_support( 'post-thumbnails' );
   ```PHP
   return '<div class="textauszeichnung">' . $content . '</div>';
   ```
-  
+  ## S09.01 - Start Custom Query
+  ```PHP
+  <?php
+                $query = new WP_Query( array( 'post_type' => 'portfolioitem') );
+                if ( $query->have_posts() ) : ?>
+                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+```
+## S09.02 - Mittelteil Custom Query
+```PHP
+<?php endwhile; wp_reset_postdata(); ?>
+<?php else : ?>
+```
+## S09.03 - Ende Custom Query
+```PHP
+<?php endif; ?>
+```
