@@ -147,3 +147,17 @@ add_theme_support( 'post-thumbnails' );
 ```PHP
 <?php endif; ?>
 ```
+## S09.04 - Ganzes Custom Query
+```PHP
+<!--Start Unterloop-->
+                <?php
+                $query = new WP_Query( array( 'post_type' => 'portfolioitem') );
+                if ( $query->have_posts() ) : ?>
+                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                    <?php get_template_part("template-parts/portfolioitems-box"); ?>
+                    <?php endwhile; wp_reset_postdata(); ?>
+                <?php else : ?>
+                    <?php get_template_part("template-parts/content", "error"); ?>
+                <?php endif; ?>
+                <!--Ende Unterloop-->
+```
