@@ -173,3 +173,14 @@ add_theme_support( 'post-thumbnails' );
 	<iframe src="https://player.vimeo.com/video/123656686?byline=0&badge=0&portrait=0&title=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe>
 </div>
 ```
+## S11.03 - Responsive Video Embeds final Code
+```HTML
+<?php if(is_page_template('template-video.php')) { ?>
+    <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+  	   <iframe src="https://www.youtube.com/embed/<?php the_field('youtube') ?>?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe>
+    </div>
+    <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
+    	<iframe src="https://player.vimeo.com/video/<?php the_field('vimeo') ?>?byline=0&badge=0&portrait=0&title=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe>
+    </div>
+<?php } ?>
+```
