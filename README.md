@@ -161,3 +161,11 @@ add_theme_support( 'post-thumbnails' );
                 <?php endif; ?>
                 <!--Ende Unterloop-->
 ```
+## S11.01 - Responsive Embed Youtube
+```HTML
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://www.youtube.com/embed/z2X2HaTvkl8?rel=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"></iframe></div>
+```
+## S11.02 - Responsive Embed Vimeo
+```HTML
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe src="https://player.vimeo.com/video/123656686?byline=0&badge=0&portrait=0&title=0" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+```
