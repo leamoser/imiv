@@ -15,7 +15,6 @@ Hier sind die Snippets zu finden, welche im Unterricht IM4 (Wordpress-Theme-Entw
 <body>
     <header>
         <h1>Portfolio</h1>
-        <p>Von Lea</p>
         <nav>
             <ul>
                 <li>Das ist ein Navigationspunkt</li>
