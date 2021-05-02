@@ -24,7 +24,7 @@ Hier sind die Snippets zu finden, welche im Unterricht IM4 (Wordpress-Theme-Entw
     </header>
     <main>
         <article>
-            <p>Hier kommt der Hauptinhalt des Protfolios</p>
+            <p>Hier kommt der Hauptinhalt des Portfolios</p>
         </article>
     </main>
     <footer>
